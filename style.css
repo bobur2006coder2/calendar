@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://www.se.com/ww/en/assets/v2/564/media/230667/900/709934422-Buildings-Facts-IC-1920x1080.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+
+}
+
+.calendar {
+    top: -100px;
+    left: -100px;
+  position: relative;
+  width: 200px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-reflect: below 10px
+    linear-gradient(180deg, transparent 40%, #0004 100%);
+  transform: 0.5s;
+}
+@keyframes calendar {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.calendar:hover {
+  box-shadow: 0 0 30px black;
+  transform: scale(1.4);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.calendar #monthName {
+  position: relative;
+  padding: 5px 10px;
+  background: #ff6331;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.calendar #dayName {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #999;
+}
+
+.calendar #dayNumber {
+  margin-top: 0;
+  line-height: 1em;
+  font-size: 80px;
+  font-weight: 300;
+  color: #333;
+}
+
+.calendar #year {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #900;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  /* width: 100%; */
+  /* height: 100vh; */
+  position: absolute;
+  /* filter: blur(5px); */
+}

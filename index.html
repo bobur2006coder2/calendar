@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <center>
+
+        <div class="container">
+            <div class="calendar">
+                <p id="monthName"></p>
+                <p id="dayName"></p>
+                <p id="dayNumber"></p>
+                <p id="year"></p>
+            </div>
+        </div>
+    </center>
+
+
+
+
+<script>
+    const lang=navigator.language
+    const date = new Date();
+    let dayNumber=date.getDate();
+    let dayname=date.toLocaleString(lang,{weekday:'long'});
+    let monthName=date.toLocaleString(lang,{month:'long'});
+    let year=date.getFullYear();
+    document.getElementById('monthName').innerHTML=monthName
+    document.getElementById('dayName').innerHTML=dayname
+    document.getElementById('dayNumber').innerHTML=dayNumber
+    document.getElementById('year').innerHTML=year;
+    
+</script>
+</body>
+</html>
